@@ -1,0 +1,32 @@
+
+
+#header{
+    height: 8vh;
+    padding: 1vh;
+    background-color: #9e6261;
+    color: white;
+    font-family: 'Abel';
+}
+
+.body{
+    min-height: 60vh;
+    padding: 4vh;
+    /* border-top: 4px solid black;
+    border-bottom: 4px solid black; */
+    font-family: 'Abel';
+    color: white;
+    background-color: #3d4c5a;
+}
+
+.material-icons.md-48 { 
+    font-size: 3em; 
+}
+
+#footer{
+    background: #9e6361;
+}
+
+#main{
+    width: 100%;
+    margin-top: -15%;
+}

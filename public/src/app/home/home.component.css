@@ -1,0 +1,51 @@
+#container{
+    width: 100%;
+    height: 100%;
+    padding-top: 4.5%;
+    /* background-image: url("http://i66.tinypic.com/25fsism.jpg"); */
+    background-image: url("http://i66.tinypic.com/35i9e8m.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    font-family: 'Abel';
+}
+
+mat-grid-tile {
+    /* background: lightblue; */
+  }
+
+h1{
+    font-size: 3em;
+    text-shadow: darkgray 1px 1px;
+    color: white;
+}
+
+h4{
+    font-size: 2em;
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+#profile{
+    box-shadow: -8px -8px #f9d840;
+    width: 100%;
+}
+
+#opaque {
+    margin-bottom: 2.5%;
+    position: relative;
+    top: 13%;
+    /* left: 5%; */
+    width: 90%;
+    height: 50%;
+    background: rgba(70, 69, 69, 0.75);
+    padding: 20px;
+    vertical-align: top;
+}
+
+#padSpace{
+    /* height: ; */
+}

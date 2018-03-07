@@ -1,0 +1,11 @@
+.icon {
+    width: 20%;
+}
+
+.tab-content{
+    height: 20vw;
+    padding: 2vw;
+    border: 4px solid #3d4c5a;
+    font-size: 21px;
+    font-family: "Abel"
+}

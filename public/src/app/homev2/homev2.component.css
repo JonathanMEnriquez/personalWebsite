@@ -1,0 +1,70 @@
+#container{
+    width: 100%;
+    height: 100%;
+    padding-top: 4.5%;
+    /* background-image: url("http://i66.tinypic.com/25fsism.jpg"); */
+    /* background-image: url("http://i66.tinypic.com/35i9e8m.jpg"); */
+    background-image: url("/assets/backgroundOpac.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(204, 204, 204, 0.2);
+    font-family: 'Abel';
+    z-index: -1;
+}
+
+mat-grid-tile {
+    /* background: lightblue; */
+  }
+
+#profile{
+    /* border: 3px white;
+    border-style: solid; */
+    border-radius: 100%;
+    /* box-shadow: -8px -8px #f9d840; */
+    width: 48%;
+}
+
+.bottomLine{
+    border-bottom: 5px solid;
+    border-color: #9e6361;
+}
+
+#gitHub{
+    width: 60%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.icon{
+    width: 73%;
+    /* margin-left: 43.75%; */
+}
+
+#atIcon{
+    width: 55%;
+    margin-top: -5%;
+    border-radius: 100%;
+}
+
+#twitter{
+    width: 85%;
+}
+
+#linkedIn{
+    width: 62%;
+}
+
+#email{
+    font-size: 3vh;
+    font-weight: bolder;
+    color: darkgray;
+}
+
+.material-icons.md-48 { 
+    text-align: center;
+    font-size: 3em; 
+}
+
+#footer{
+    background: #9e6361;
+}

@@ -1,0 +1,50 @@
+<div id="container">
+  <div id="opaque" (window:resize)="onResize($event)">
+    <mat-divider></mat-divider>
+    <mat-grid-list cols="{{test}}" rowHeight="5:1">
+      <mat-grid-tile
+        [colspan] = 2>
+        <h1>Jonathan Enriquez</h1>  
+      </mat-grid-tile>
+      <mat-grid-tile
+        [rowspan] = 6>
+        <img src="/assets/profile.JPG" id="profile" alt="profile">
+        </mat-grid-tile>
+      <mat-grid-tile
+        [colspan] = 2>
+        <h4>Jr Web/App Developer</h4>  
+      </mat-grid-tile>
+      <mat-grid-tile
+        [colspan] = 2>
+        <h4><a href="https://github.com/JonathanMEnriquez">GitHub</a></h4>
+      </mat-grid-tile>
+      <mat-grid-tile
+      [colspan] = 2>
+      <h5>jonathanmenriquez@yahoo.com</h5>  
+      </mat-grid-tile>
+      <mat-grid-tile
+      [colspan] = 2>
+      <h4><a href="https://www.facebook.com/jonathan.enriquez.5496?ref=bookmarks">Facebook</a></h4>
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan] = 2>
+      <h4><a href="https://twitter.com/JonMEnriquez">Twitter</a></h4>
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan] = 3>
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button routerLink="">Link</a>
+      <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+      </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-divider></mat-divider>
+  </div>
+  <div id="padSpace">
+    _
+  </div>
+</div>
