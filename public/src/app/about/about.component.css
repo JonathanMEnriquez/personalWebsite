@@ -1,32 +1,69 @@
+#container{
+    font-family: 'Avenir Next', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
 
+#container h1{
+    font-weight: bolder;
+    letter-spacing: 1vw;
+}
 
 #header{
-    height: 8vh;
-    padding: 1vh;
+    height: 5vw;
+    padding: 1vw;
     background-color: #9e6261;
     color: white;
     font-family: 'Abel';
-}
-
-.body{
-    min-height: 60vh;
-    padding: 4vh;
-    /* border-top: 4px solid black;
-    border-bottom: 4px solid black; */
-    font-family: 'Abel';
-    color: white;
-    background-color: #3d4c5a;
+    margin-bottom: 20px;
 }
 
 .material-icons.md-48 { 
     font-size: 3em; 
 }
 
-#footer{
-    background: #9e6361;
+.main{
+    /* width: 100%;
+    margin-left: 50%; */
+    vertical-align: top;
+    margin-top: -10%;
+    margin-left: 40%;
 }
 
-#main{
-    width: 100%;
-    margin-top: -15%;
+mat-grid-tile {
+    vertical-align: top;
+}
+
+.parallax-container{
+    /* The image used */
+    background-image: url("/assets/waterfall.gif");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerHeader {
+    width: fit-content;
+    height: 100%;
+    color: white;
+}
+
+#wideLine{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.aboutContent {
+    font-size: 1.25vw;
+    padding: 10%;
+    font-weight: 500;
+}
+
+#test {
+    z-index: 1;
 }
