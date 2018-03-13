@@ -1,0 +1,58 @@
+<div class="header">
+    <h5></h5>
+</div>
+<div id="contact">
+  <div class="contactHeader">
+      <h5></h5>
+  </div>
+  <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" id="usImg" src="/assets/us.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Contact me =><i class="material-icons right">email</i></span>
+        <p><a href="/">Top</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Send me a message!<i class="material-icons right">close</i></span>
+        <div id="form">
+            <mat-form-field>
+                <input matInput placeholder="Enter your email" name="email" [formControl]="email" required >
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <textarea matInput placeholder="Write a Message" [formControl]="message" ></textarea>
+              <mat-error *ngIf="message.invalid">{{getError()}}</mat-error>
+            </mat-form-field>
+            <button mat-raised-button *ngIf="!message.invalid && !email.invalid" (click)="newMessage()">Send</button>
+        </div>
+        <p *ngIf="success != undefined" class="success">{{success}}</p>
+      </div>
+  </div>
+</div>
+<div id="footer">
+  <mat-grid-list cols="1" rowHeight="24px"> <mat-grid-tile></mat-grid-tile> </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="5:1">
+    <mat-grid-tile [colspan]="1"><img id="nameLogo" src="/assets/je2.png" alt="Logo"></mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="1.50em">
+    <mat-grid-tile [colspan]="3"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><a href="https://github.com/JonathanMEnriquez">GitHub</a></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><h6>jonathanmenriquez@yahoo.com</h6></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><a href="https://www.linkedin.com/in/jonathan-enriquez/">LinkedIn</a></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><h6>626-252-5678</h6></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><a href="https://twitter.com/JonMEnriquez">Twitter</a></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><h6>PO Box 114, 15902 Haliburton Rd. Hacienda Heights, CA</h6></mat-grid-tile>
+    <mat-grid-tile [colspan]="3"></mat-grid-tile>
+  </mat-grid-list>
+  <mat-divider></mat-divider>
+  <br>
+  <mat-grid-list cols="4" rowHeight="16px">
+    <mat-grid-tile [colspan]="3"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1"><p id="copyright">© 2018, Jonathan Enriquez</p></mat-grid-tile>
+    <mat-grid-tile [colspan]="4"></mat-grid-tile>
+  </mat-grid-list>
+</div>

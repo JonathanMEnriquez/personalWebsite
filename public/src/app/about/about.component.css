@@ -1,20 +1,21 @@
 #container{
-    font-family: 'Avenir Next', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 #container h1{
     font-weight: bolder;
-    letter-spacing: 1vw;
+    letter-spacing: 0.75vw;
+    padding: 1.5em;
+    text-shadow: 0.5px 0.5px black;
 }
 
-#header{
+.header{
     height: 5vw;
     padding: 1vw;
     background-color: #9e6261;
     color: white;
     font-family: 'Abel';
-    margin-bottom: 20px;
 }
 
 .material-icons.md-48 { 
@@ -35,7 +36,7 @@ mat-grid-tile {
 
 .parallax-container{
     /* The image used */
-    background-image: url("/assets/waterfall.gif");
+    background-image: url("/assets/lake_pretty.gif");
 
     /* Full height */
     height: 100%; 
@@ -48,9 +49,10 @@ mat-grid-tile {
 }
 
 .containerHeader {
-    width: fit-content;
-    height: 100%;
+    width: 40vw;
+    height: 40vw;
     color: white;
+    font-size: 3vw;
 }
 
 #wideLine{

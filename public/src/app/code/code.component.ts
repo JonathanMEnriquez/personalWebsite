@@ -9,7 +9,7 @@ export class CodeComponent implements OnInit {
 
   constructor() { }
 
-  angularContent: String = "I learned the Angular framework as part of the third stack of my curriculum (MEAN). This website was built using Angular, including Angular Material and Materialize."
+  angularContent: String = "I learned the Angular framework as part of the third stack of my curriculum (MEAN Stack). This front-end of this site was built using Angular, include their Material components (in part). I look forward to continuing to work with the framework. "
 
   ngOnInit() {
   }

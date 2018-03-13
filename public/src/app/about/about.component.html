@@ -1,8 +1,8 @@
 <div id="container">
-    <div id="header">
+    <div class="header">
     <h5></h5>
     </div>
-    <h1>WHO AM I?</h1>
+    <h1>ABOUT ME</h1>
     <mat-grid-list cols="10" rowHeight="1:1.5">
         <mat-grid-tile [colspan]="4">
             <div class="parallax-container" materialize="parallax">
@@ -10,10 +10,10 @@
             </div>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="6">
-            <p class="aboutContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod incidunt eveniet eum ipsam, quibusdam repellat, error et molestiae quos minus officia? Nobis, sit iure facilis a ducimus quisquam quidem!</p>
+            <p class="aboutContent">{{aboutContent[0]}}</p>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="6">
-            <p class="aboutContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod incidunt eveniet eum ipsam, quibusdam repellat, error et molestiae quos minus officia? Nobis, sit iure facilis a ducimus quisquam quidem!</p>
+            <p class="aboutContent">{{aboutContent[1]}}</p>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="4">
             <div class="parallax-container" materialize="parallax">
@@ -26,10 +26,13 @@
             </div>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="6">
-                <p class="aboutContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod incidunt eveniet eum ipsam, quibusdam repellat, error et molestiae quos minus officia? Nobis, sit iure facilis a ducimus quisquam quidem!</p>
+                <p class="aboutContent">{{aboutContent[2]}}</p>
         </mat-grid-tile>
     </mat-grid-list>
     <mat-divider id="wideLine"></mat-divider>
+    <div class="header">
+        <h5></h5>
+    </div>
 </div>
 <!-- <div class="parallax-container" >
   <div class="parallax" materialize="parallax"><img class="main" src="assets/lake_pretty.gif"></div>

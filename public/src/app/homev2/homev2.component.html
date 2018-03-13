@@ -27,16 +27,16 @@
   </mat-grid-list>
   <mat-grid-list cols="40" rowHeight="1:1">
       <mat-grid-tile [colspan]="12"></mat-grid-tile>
-      <mat-grid-tile> <a mat-icon-button href="https://github.com/JonathanMEnriquez"> <img src="/assets/github.png" id="gitHub" alt="GitHub"> </a></mat-grid-tile>
+      <mat-grid-tile> <a class="btn btn-floating pulse" mat-icon-button href="https://github.com/JonathanMEnriquez"> <img src="/assets/github.png" id="gitHub" alt="GitHub"> </a></mat-grid-tile>
       <mat-grid-tile [colspan]="4"></mat-grid-tile>
-      <mat-grid-tile> <button mat-icon-button [disableRipple]="true" (click)="abracadabra()"><img id="atIcon" src="/assets/at.png" alt="@"></button></mat-grid-tile>
+      <mat-grid-tile> <button class="btn btn-floating pulse" mat-icon-button [disableRipple]="true" (click)="abracadabra()"><img id="atIcon" src="/assets/at.png" alt="@"></button></mat-grid-tile>
       <mat-grid-tile [colspan]="4"></mat-grid-tile>
-      <mat-grid-tile> <a mat-icon-button href="https://www.linkedin.com/in/jonathan-enriquez/"> <img src="/assets/linkedIn.png" id="linkedIn" alt="LinkedIn"> </a></mat-grid-tile>
+      <mat-grid-tile> <a class="btn btn-floating pulse" mat-icon-button href="https://www.linkedin.com/in/jonathan-enriquez/"> <img src="/assets/linkedIn.png" id="linkedIn" alt="LinkedIn"> </a></mat-grid-tile>
       <mat-grid-tile [colspan]="4"></mat-grid-tile>
-      <mat-grid-tile> <a mat-icon-button href="https://twitter.com/JonMEnriquez"> <img src="/assets/twitter.png" id="twitter" alt="Twitter"> </a></mat-grid-tile>
+      <mat-grid-tile> <a class="btn btn-floating pulse" mat-icon-button href="https://twitter.com/JonMEnriquez"> <img src="/assets/twitter.png" id="twitter" alt="Twitter"> </a></mat-grid-tile>
       <mat-grid-tile [colspan]="12"></mat-grid-tile>
       <mat-grid-tile [colspan]="15"></mat-grid-tile>
-      <mat-grid-tile [colspan]="10"> <p id="email" *ngIf="email != undefined" > {{ email }} </p></mat-grid-tile>
+      <mat-grid-tile [colspan]="10"> <p id="email"  *ngIf="email != undefined" > {{ email }} </p></mat-grid-tile>
       <mat-grid-tile [colspan]="15"></mat-grid-tile>
   </mat-grid-list>
   <mat-grid-list cols="20" rowHeight="1:1">
@@ -59,3 +59,4 @@
 </div>
 <app-about></app-about>
 <app-code></app-code>
+<app-contact></app-contact>

@@ -2,10 +2,80 @@
     width: 20%;
 }
 
+mat-tab {
+    height: 4vh;
+}
+
 .tab-content{
-    height: 20vw;
-    padding: 2vw;
+    height: 28vw;
+    padding: 4vw;
     border: 4px solid #3d4c5a;
-    font-size: 21px;
-    font-family: "Abel"
+    font-size: 1.5vw;
+    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+}
+
+.langHeader {
+    padding: 12vh;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1vw;
+}
+
+mat-card {
+    margin-bottom: 12vh;
+}
+
+.journey {
+    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.journey h5 {
+    font-size: 3.5em;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 1vw;
+    margin-bottom: 10vh;
+    background: url("/assets/journey.png");
+    background-size: 100% 5vh;
+    background-repeat: no-repeat;
+    padding: 3vh, 10vh, 3vh, 10vh;
+}
+
+.journey h6 {
+    font-size: 2em;
+}
+
+.collapsible-header {
+    /* padding-left: 5%;
+    padding-right: 6vw; */
+}
+
+#dojo {
+    width: 2.25vw;
+}
+
+.stackName {
+    letter-spacing: 1vw;
+}
+
+.stackNum {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.5em;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-right: 1vw;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+}
+
+.divider{
+    height: 1.5vw;
+    padding: 1vw;
+    background-color: #9e6261;
+    margin-bottom: 12vh;
 }

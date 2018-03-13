@@ -1,0 +1,74 @@
+#contact {
+    width: 60%;
+    margin-top: 4vh;
+}
+
+#usImg {
+    width: 60%;
+}
+
+.header{
+    height: 5vw;
+    padding: 1vw;
+    background-color: #9e6261;
+    color: white;
+    font-family: 'Abel';
+}
+
+.contactHeader {
+    background-color: #48596b;
+    height: 2.5vh;
+    padding: 0.5vw;
+    margin-bottom: 2vh;
+}
+
+#footer {
+    background-color: #9e6261;
+    color: white;
+    font-family: 'Abel';
+    text-align: left;
+    vertical-align: top;
+}
+
+mat-grid-tile {
+    vertical-align: top;
+    text-align: left;
+}
+
+#nameLogo {
+    width: 48%;
+}
+
+#copyright {
+    color: black;
+    font-size: 0.75em;
+}
+
+mat-grid-tile a {
+    letter-spacing: 0.25em;
+    color: lightgray;
+    font-size: 1em;
+}
+
+mat-grid-tile h6 {
+    color: lightgray;
+}
+
+mat-form-field {
+    width: 96%;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+button {
+    margin-left: 2%;
+    margin-top: 6vh;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 4vh;
+}
