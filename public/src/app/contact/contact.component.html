@@ -26,6 +26,9 @@
             </mat-form-field>
             <button mat-raised-button *ngIf="!message.invalid && !email.invalid" (click)="newMessage()">Send</button>
         </div>
+        <div *ngIf="sending == true" class="progress">
+            <div class="indeterminate"></div>
+        </div>
         <p *ngIf="success != undefined" class="success">{{success}}</p>
       </div>
   </div>

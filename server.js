@@ -1,5 +1,3 @@
-import { Schema } from 'mongoose';
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
@@ -22,14 +20,38 @@ var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'jonathancanhelp@gmail.com',
-      pass: '&Password7!'
+      pass: "&Password7!"
     }
   });
   
 
 app.post('/api/message', function (req, res) {
     console.log(req.body);
-    res.json({ message: "Success" });
+    let message = new Message(req.body);
+    message.save(function(err, savedMessage) {
+        if (err) {
+            console.log('Error in save', err);
+            res.json({message: "Error", errors: err});
+        } else {
+            // send email
+            var mailOptions = {
+                from: savedMessage.email,
+                to: 'jonathanmenriquez@yahoo.com',
+                subject: 'New Message from Personal Site',
+                text: savedMessage.email + " sent this message: " + savedMessage.message
+              };
+              
+              transporter.sendMail(mailOptions, function(error, info){
+                if (error) {
+                  console.log(error);
+                  res.json({message: "Success", message: savedMessage});
+                } else {
+                  console.log('Email sent: ' + info.response);
+                  res.json({message: "Success", message: savedMessage});
+                }
+              });
+        }
+    })
 })
 
 app.all('*', (req, res, next)=> {

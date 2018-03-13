@@ -36,6 +36,25 @@
             </div>  
         </mat-tab>
         <mat-tab label="Tab 4">
+            <ng-template mat-tab-label>
+                <img src="/assets/jquery.png" class="icon" alt="JQuery">
+            </ng-template>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+              orci enim rutrum enim, vel tempor sapien arcu a tellus.
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+              orci enim rutrum enim, vel tempor sapien arcu a tellus.
+            </div>  
+          </mat-tab>
+        <mat-tab label="Tab 5">
           <ng-template mat-tab-label>
               <img src="/assets/mongoLeaf.png" class="icon" alt="MongoDB">
           </ng-template>
@@ -54,7 +73,7 @@
             orci enim rutrum enim, vel tempor sapien arcu a tellus.
           </div>  
         </mat-tab>
-        <mat-tab label="Tab 5">
+        <mat-tab label="Tab 6">
           <ng-template mat-tab-label>
               <img src="/assets/nodejs.png" class="icon" alt="Node">
           </ng-template>
@@ -73,7 +92,7 @@
               orci enim rutrum enim, vel tempor sapien arcu a tellus.
             </div> 
         </mat-tab>
-        <mat-tab label="Tab 6">
+        <mat-tab label="Tab 7">
           <ng-template mat-tab-label>
             <img src="/assets/materialize.png" class="icon" alt="Materialize">
           </ng-template>
@@ -92,7 +111,7 @@
               orci enim rutrum enim, vel tempor sapien arcu a tellus.
             </div> 
         </mat-tab>
-        <mat-tab label="Tab 7">
+        <mat-tab label="Tab 8">
             <ng-template mat-tab-label>
               <img src="/assets/socket.png" class="icon" alt="Socket io">
             </ng-template>
@@ -120,11 +139,11 @@
   <ul materialize="collapsible" class="collapsible popout" data-collapsible="accordion">
   <li>
     <div class="collapsible-header" ><h6 class="stackName"><span class="stackNum">FIRST STACK: </span>Python</h6></div>
-    <div class="collapsible-body"><p>The first stack began after two weeks of Web Fundamentals. We learned .</p></div>
+    <div class="collapsible-body"><p>{{pythonContent}}</p></div>
   </li>
   <li>
     <div class="collapsible-header"><h6 class="stackName"><span class="stackNum">SECOND STACK: </span>iOS </h6></div>
-    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    <div class="collapsible-body"><p>{{iOSContent}}</p></div>
   </li>
   <li>
     <div class="collapsible-header"><h6 class="stackName"><span class="stackNum">THIRD STACK: </span>MEAN</h6></div>
