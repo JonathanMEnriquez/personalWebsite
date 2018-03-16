@@ -42,9 +42,9 @@ app.post('/api/message', function (req, res) {
               };
               
               transporter.sendMail(mailOptions, function(error, info){
-                if (error) {
-                  console.log(error);
-                  res.json({message: "Error", error: error});
+                if (error != null || error != undefined) {
+                  console.log("Error: ", error);
+                  res.json({message: "Error", errors: error});
                 } else {
                   console.log('Email sent: ' + info.response);
                   res.json({message: "Success", message: savedMessage});

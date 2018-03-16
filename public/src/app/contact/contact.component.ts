@@ -39,16 +39,15 @@ export class ContactComponent implements OnInit {
       message: this.message.value
     }
 
-    console.log('new message: ', newObj);
     let observable = this._apiService.createNewMessage(newObj);
     observable.subscribe((responseData: any) => {
-      console.log(responseData)
-      if (responseData.message == "Success") {
+      console.log("Response: ", responseData)
+      if (!responseData.errors) {
         this.sending = false;
         this.success = "Thank you for your message. I will respond as promptly as possible."
         this.email = new FormControl('', [Validators.required, Validators.email]);
         this.message = new FormControl('', Validators.required);
-      } else if (responseData.message = "Error") {
+      } else {
         this.sending = false;
         this.error = "Message not sent. Please check your network settings."
       }
