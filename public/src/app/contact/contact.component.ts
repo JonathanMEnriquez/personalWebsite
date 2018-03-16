@@ -12,6 +12,7 @@ export class ContactComponent implements OnInit {
   email: FormControl
   message: FormControl
   success: String
+  error: String
   sending: Boolean = false;
 
   constructor(private _apiService: ApiService) {
@@ -41,10 +42,16 @@ export class ContactComponent implements OnInit {
     console.log('new message: ', newObj);
     let observable = this._apiService.createNewMessage(newObj);
     observable.subscribe((responseData: any) => {
-      this.sending = false;
-      this.success = "Thank you for your message. I will respond as promptly as possible."
-      this.email = new FormControl('', [Validators.required, Validators.email]);
-      this.message = new FormControl('', Validators.required);
+      console.log(responseData)
+      if (responseData.message == "Success") {
+        this.sending = false;
+        this.success = "Thank you for your message. I will respond as promptly as possible."
+        this.email = new FormControl('', [Validators.required, Validators.email]);
+        this.message = new FormControl('', Validators.required);
+      } else if (responseData.message = "Error") {
+        this.sending = false;
+        this.error = "Message not sent. Please check your network settings."
+      }
     })
   }
 

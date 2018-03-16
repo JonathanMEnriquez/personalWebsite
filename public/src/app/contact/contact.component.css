@@ -72,3 +72,14 @@ button {
     font-size: 1em;
     margin-top: 4vh;
 }
+
+input {
+    color: black;
+}
+
+.errors {
+    color: red;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 4vh;
+}

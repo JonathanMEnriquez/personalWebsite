@@ -2,16 +2,30 @@
     width: 20%;
 }
 
+.header{
+    height: 5vw;
+    padding: 1vw;
+    background-color: hsl(1, 24%, 50%);
+    color: white;
+    font-family: 'Abel';
+}
+
 mat-tab {
     height: 4vh;
+    margin-left: -10px;
 }
 
 .tab-content{
-    height: 28vw;
-    padding: 4vw;
+    height: 34vw;
+    padding: 2vw;
     border: 4px solid #3d4c5a;
     font-size: 1.5vw;
     font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+}
+
+.tab-content p {
+    font-size: 0.75em;
+    text-align: center;
 }
 
 .langHeader {
@@ -23,6 +37,8 @@ mat-tab {
 
 mat-card {
     margin-bottom: 12vh;
+    background-color: #3d4c5a;
+    color: lightgray;
 }
 
 .journey {
@@ -73,9 +89,41 @@ mat-card {
     height: 2em;
 }
 
-.divider{
+.divider {
     height: 1.5vw;
     padding: 1vw;
-    background-color: #9e6261;
+    background-color: #48596b;
     margin-bottom: 12vh;
+}
+
+.products {
+    /* width: 30vw; */
+    margin: 1em;
+}
+
+#imgContainer {
+    width: 350px;
+    padding: 2vh;
+}
+
+.centered {
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 1.25vw;
+}
+
+.collapsibleContent {
+    font-size: 1.15em;
+}
+
+#fixMargin {
+    margin-left: -76%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#fixMarginSmaller {
+    margin-left: -33%;
 }

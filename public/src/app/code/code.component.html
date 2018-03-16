@@ -1,3 +1,6 @@
+<div class="header">
+    <h5></h5>
+</div>
 <mat-card>
     <mat-card-content>
       <h2 class="langHeader">LANGUAGES AND FRAMEWORKS</h2>
@@ -8,7 +11,13 @@
           </ng-template>
           <div class="tab-content">
             {{angularContent}}
-            <a href="https://github.com/JonathanMEnriquez/personalWebsite.git"> Link</a> to the source code.
+            <div class="centered">
+              1. <a href="https://github.com/JonathanMEnriquez/personalWebsite.git"> Link</a> to the source code for this site. <br>
+              2. <a href="https://github.com/JonathanMEnriquez/productsFullMean"> Angular (with a Node server and MongoDB) Assignment "PPM" source code</a> <br>
+              <div id="imgContainer">
+                <img src="/assets/projects/products.png" id="fixMarginSmaller" class="z-depth-4" class="materialboxed" width="500" alt="PPA Assignment">
+              </div>
+            </div> 
           </div>
         </mat-tab>
         <mat-tab label="Tab 2">
@@ -16,11 +25,14 @@
             <img src="/assets/djangoSimple.png" class="icon" alt="Django">
           </ng-template>
           <div class="tab-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-            orci enim rutrum enim, vel tempor sapien arcu a tellus.
+            {{djangoContent}}
+            <div class="centered">
+              1. <a href="http://18.218.40.253"> Django / SQLite Project "Coders. On Demand" Live Site</a>. <a href="https://github.com/JonathanMEnriquez/rentcoder"> The Source Code.</a> <br>
+              <div id="imgContainer">
+                <img src="/assets/projects/coders.png" class="z-depth-4" id="fixMarginSmaller" class="materialboxed" width="500" alt="Coders. On Demand.">
+                <img src="/assets/projects/models.png" class="z-depth-4" id="fixMarginSmaller" width="500" alt="Models for Coders">
+              </div>
+            </div> 
           </div>  
         </mat-tab>
         <mat-tab label="Tab 3">
@@ -28,126 +40,95 @@
             <img src="/assets/ios.png" class="icon" alt="iOS">
           </ng-template>
           <div class="tab-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
+              {{iosContent}} <br><br>
+              <p>1. <span class="bold"> Runner's HIIE </span> - Running training with intervals app. Users can register, save routes, save workout sessions, and view results! 2nd Dojo Hackathon winner. (Source code is in a private repo on GitLab)</p>
+              <div id="imgContainer">
+                <img src="/assets/runners.gif" id="fixMargin"  width="850" alt="Runner's HIIE">
+              </div>
+              <p>2. <span class="bold"> Anonymous Dojo </span> - App using Muli-peer Connectivity to connect with fellow Dojo students. <a href="https://github.com/JonathanMEnriquez/anonymousDojo"> Source Code.</a></p>
+              <div id="imgContainer">
+                <img src="/assets/anon.gif" id="fixMargin"  width="850" alt="Anonymous Dojo">
+              </div>
+              <p>3. <span class="bold"> Quasar </span> - Survive the onslaught of cute aliens. Control firing and movement by moving the phone. No buttons! <a href="https://github.com/JonathanMEnriquez/QuasarGame"> Source Code.</a></p>
+              <div id="imgContainer">
+                <img src="/assets/quasar.gif" id="fixMargin"  width="850" alt="Quasar">
+              </div>
             </div>  
         </mat-tab>
         <mat-tab label="Tab 4">
-            <ng-template mat-tab-label>
-                <img src="/assets/jquery.png" class="icon" alt="JQuery">
-            </ng-template>
-            <div class="tab-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
-            </div>  
-          </mat-tab>
-        <mat-tab label="Tab 5">
           <ng-template mat-tab-label>
               <img src="/assets/mongoLeaf.png" class="icon" alt="MongoDB">
           </ng-template>
           <div class="tab-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-            orci enim rutrum enim, vel tempor sapien arcu a tellus.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-            orci enim rutrum enim, vel tempor sapien arcu a tellus.
+            {{mongoContent}}
+            <div class="centered">
+              1. Book / Authors API Assignment. <a href="#"> Source Code.</a> <br>
+              <div id="imgContainer">
+                <img src="/assets/projects/booksApi.png" id="fixMarginSmaller" class="z-depth-4" class="materialboxed" width="500" alt="Coders. On Demand.">
+              </div>
+            </div> 
           </div>  
         </mat-tab>
-        <mat-tab label="Tab 6">
+        <mat-tab label="Tab 5">
           <ng-template mat-tab-label>
               <img src="/assets/nodejs.png" class="icon" alt="Node">
           </ng-template>
           <div class="tab-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
+              {{nodeContent}}
+              <div class="centered">
+                1. <a href="https://github.com/JonathanMEnriquez/personalWebsite.git"> Link</a> to the source code for this site. <br>
+                <div id="imgContainer">
+                  <img src="/assets/projects/portfolioServer.png" id="fixMarginSmaller" class="z-depth-4" width="500" alt="this.server">
+                </div>
+              </div> 
             </div> 
         </mat-tab>
-        <mat-tab label="Tab 7">
+        <mat-tab label="Tab 6">
           <ng-template mat-tab-label>
             <img src="/assets/materialize.png" class="icon" alt="Materialize">
           </ng-template>
           <div class="tab-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-              orci enim rutrum enim, vel tempor sapien arcu a tellus.
+              {{materializeContent}}
+              <div class="centered">
+                  <a href="https://github.com/JonathanMEnriquez/personalWebsite.git"> Link</a> to the source code for this site. <br>
+                </div> 
             </div> 
         </mat-tab>
-        <mat-tab label="Tab 8">
+        <mat-tab label="Tab 7">
             <ng-template mat-tab-label>
               <img src="/assets/socket.png" class="icon" alt="Socket io">
             </ng-template>
             <div class="tab-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-                Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-                In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-                feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-                orci enim rutrum enim, vel tempor sapien arcu a tellus.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-                Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-                In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-                feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-                orci enim rutrum enim, vel tempor sapien arcu a tellus.
+                {{socketContent}}
+                <div class="centered">
+                    1. <a href="https://github.com/JonathanMEnriquez/dojoChatRoom"> Live chat room source code</a> <br>
+                    <div id="imgContainer">
+                      <img src="/assets/projects/dojoChat.png" id="fixMarginSmaller" class="materialboxed" width="500" alt="Chat Assignment">
+                    </div>
+                  </div> 
               </div> 
           </mat-tab>
       </mat-tab-group>
     </mat-card-content>
   </mat-card>
-<div class="divider"><h5></h5></div>
+<!-- <div class="divider"><h5></h5></div> -->
 <div class="journey">
   <h5>THE <img src="/assets/codingDojo.png" id="dojo" alt="Coding Dojo"> JOURNEY</h5>
   <ul materialize="collapsible" class="collapsible popout" data-collapsible="accordion">
   <li>
     <div class="collapsible-header" ><h6 class="stackName"><span class="stackNum">FIRST STACK: </span>Python</h6></div>
-    <div class="collapsible-body"><p>{{pythonContent}}</p></div>
+    <div class="collapsible-body"><p class="collapsibleContent">{{pythonContent}}</p></div>
   </li>
   <li>
     <div class="collapsible-header"><h6 class="stackName"><span class="stackNum">SECOND STACK: </span>iOS </h6></div>
-    <div class="collapsible-body"><p>{{iOSContent}}</p></div>
+    <div class="collapsible-body"><p class="collapsibleContent">{{iOSContent}}</p></div>
   </li>
   <li>
     <div class="collapsible-header"><h6 class="stackName"><span class="stackNum">THIRD STACK: </span>MEAN</h6></div>
-    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    <div class="collapsible-body"><p class="collapsibleContent">{{meanContent}}</p></div>
   </li>
 </ul>
+</div>
+<div class="header">
+    <h5></h5>
 </div>

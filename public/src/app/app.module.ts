@@ -14,6 +14,7 @@ import { CodeComponent } from './code/code.component';
 import { ContactComponent } from './contact/contact.component';
 import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     Homev2Component,
     AboutComponent,
     CodeComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@
 .header{
     height: 5vw;
     padding: 1vw;
-    background-color: #9e6261;
+    background-color: hsl(1, 24%, 50%);
     color: white;
     font-family: 'Abel';
 }
