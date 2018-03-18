@@ -12,10 +12,6 @@
     z-index: -1;
 }
 
-mat-grid-tile {
-    /* background: lightblue; */
-  }
-
 #profile{
     /* border: 3px white;
     border-style: solid; */
@@ -67,4 +63,8 @@ mat-grid-tile {
 
 #footer{
     background: #9e6361;
+}
+
+.opaque {
+    opacity: 0.9;
 }

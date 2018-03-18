@@ -6,6 +6,26 @@
       <h2 class="langHeader">LANGUAGES AND FRAMEWORKS</h2>
       <mat-tab-group class="tab-group">
         <mat-tab label="Tab 1">
+            <ng-template mat-tab-label>
+              <img src="/assets/ios.png" class="icon" alt="iOS">
+            </ng-template>
+            <div class="tab-content">
+                {{iosContent}} <br><br>
+                <p>1. <span class="bold"> Runner's HIIE </span> - Running training with intervals app. Users can register, save routes, save workout sessions, and view results! 2nd Dojo Hackathon winner. (Source code is in a private repo on GitLab)</p>
+                <div id="imgContainer">
+                  <a href="http://www.youtube.com/watch?v=wesn6CoC790"><img src="/assets/projects/runners.gif" id="fixMargin"  width="850" alt="Runner's HIIE"></a>
+                </div>
+                <p>2. <span class="bold"> Anonymous Dojo </span> - App using Muli-peer Connectivity to connect with fellow Dojo students. <a href="https://github.com/JonathanMEnriquez/anonymousDojo"> Source Code.</a></p>
+                <div id="imgContainer">
+                  <img src="/assets/projects/anon.gif" id="fixMargin"  width="850" alt="Anonymous Dojo">
+                </div>
+                <p>3. <span class="bold"> Quasar </span> - Survive the onslaught of cute aliens. Control firing and movement by moving the phone. No buttons! <a href="https://github.com/JonathanMEnriquez/QuasarGame"> Source Code.</a></p>
+                <div id="imgContainer">
+                  <img src="/assets/projects/quasar.gif" id="fixMargin"  width="850" alt="Quasar">
+                </div>
+              </div>  
+          </mat-tab>
+        <mat-tab label="Tab 2">
           <ng-template mat-tab-label>
               <img src="/assets/angular.png" class="icon" alt="Angular">
           </ng-template>
@@ -20,7 +40,7 @@
             </div> 
           </div>
         </mat-tab>
-        <mat-tab label="Tab 2">
+        <mat-tab label="Tab 3">
           <ng-template mat-tab-label>
             <img src="/assets/djangoSimple.png" class="icon" alt="Django">
           </ng-template>
@@ -34,26 +54,6 @@
               </div>
             </div> 
           </div>  
-        </mat-tab>
-        <mat-tab label="Tab 3">
-          <ng-template mat-tab-label>
-            <img src="/assets/ios.png" class="icon" alt="iOS">
-          </ng-template>
-          <div class="tab-content">
-              {{iosContent}} <br><br>
-              <p>1. <span class="bold"> Runner's HIIE </span> - Running training with intervals app. Users can register, save routes, save workout sessions, and view results! 2nd Dojo Hackathon winner. (Source code is in a private repo on GitLab)</p>
-              <div id="imgContainer">
-                <img src="/assets/runners.gif" id="fixMargin"  width="850" alt="Runner's HIIE">
-              </div>
-              <p>2. <span class="bold"> Anonymous Dojo </span> - App using Muli-peer Connectivity to connect with fellow Dojo students. <a href="https://github.com/JonathanMEnriquez/anonymousDojo"> Source Code.</a></p>
-              <div id="imgContainer">
-                <img src="/assets/anon.gif" id="fixMargin"  width="850" alt="Anonymous Dojo">
-              </div>
-              <p>3. <span class="bold"> Quasar </span> - Survive the onslaught of cute aliens. Control firing and movement by moving the phone. No buttons! <a href="https://github.com/JonathanMEnriquez/QuasarGame"> Source Code.</a></p>
-              <div id="imgContainer">
-                <img src="/assets/quasar.gif" id="fixMargin"  width="850" alt="Quasar">
-              </div>
-            </div>  
         </mat-tab>
         <mat-tab label="Tab 4">
           <ng-template mat-tab-label>

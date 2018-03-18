@@ -10,7 +10,9 @@ export class Homev2Component implements OnInit {
 
   constructor() { }
 
-  nameStr:String = "Jonathan Enriquez"
+  nameStr: String = "Jonathan Enriquez"
+
+  profile: String = "none"
 
   email:String;
 
@@ -30,20 +32,12 @@ export class Homev2Component implements OnInit {
     }
   }
 
-  nameFocus(event, idx) {
-    console.log(event);
-    // this.interval = window.setInterval(this.typeName, 1000);
+  nameFocus(event) {
+    // console.log(event);
+    this.profile = "opaque"
   }
 
-  // typeName() {
-  //   console.log('type name nameSTr', this.nameStr);
-  //   var arr = this.nameStr.split('');
-  //   console.log(arr);
-  //   console.log(arr[this.idx]);
-  //   arr[this.idx] = "_";
-  //   this.idx++;
-  //   this.nameStr = arr.join();
-  //   console.log(this.nameStr, this.idx);
-  // }
-
+  lostFocus(event) {
+    this.profile = "none"
+  }
 }

@@ -26,6 +26,8 @@ mat-tab {
 .tab-content p {
     font-size: 0.75em;
     text-align: center;
+    padding-left: 16vh;
+    padding-right: 16vh;
 }
 
 .langHeader {
@@ -33,6 +35,7 @@ mat-tab {
     text-align: center;
     font-weight: bold;
     letter-spacing: 1vw;
+    font-size: 3.85vw;
 }
 
 mat-card {
@@ -77,7 +80,7 @@ mat-card {
 }
 
 .stackNum {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Abel';
     font-size: 0.5em;
     font-weight: bold;
     letter-spacing: normal;
