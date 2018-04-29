@@ -19,7 +19,7 @@ var Message = mongoose.model('Messages');
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'jonathancanhelp@gmail.com',
+      user: 'jonathanedeveloper@gmail.com',
       pass: "&Password7!"
     }
   });
