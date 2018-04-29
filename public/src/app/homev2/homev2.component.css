@@ -33,7 +33,6 @@
 
 .icon{
     width: 73%;
-    /* margin-left: 43.75%; */
 }
 
 #atIcon{
@@ -51,9 +50,17 @@
 }
 
 #email{
-    font-size: 3vh;
+    font-size: 1.25vw;
     font-weight: bolder;
     color: darkgray;
+}
+
+#name {
+    font-size: 3.5vw;
+}
+
+#title {
+    font-size: 2vw;
 }
 
 .material-icons.md-48 { 
