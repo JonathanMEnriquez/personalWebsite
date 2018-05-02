@@ -4,30 +4,30 @@
 <mat-card>
     <mat-card-content>
       <h2 class="langHeader">LANGUAGES AND FRAMEWORKS</h2>
-      <mat-tab-group class="tab-group">
+      <mat-tab-group id="tab-group">
         <mat-tab label="Tab 1">
             <ng-template mat-tab-label>
-              <img src="/assets/ios.png" class="icon" alt="iOS">
+              <img src="/assets/ios.png" id="icon" alt="iOS">
             </ng-template>
             <div class="tab-content">
-                {{iosContent}} <br><br>
+                <h5>{{iosContent}}</h5> <br><br>
                 <p>1. <span class="bold"> Runner's HIIE </span> - Running training with intervals app. Users can register, save routes, save workout sessions, and view results! 2nd Dojo Hackathon winner. (Source code is in a private repo on GitLab)</p>
                 <div id="imgContainer">
-                  <a href="http://www.youtube.com/watch?v=wesn6CoC790"><img src="/assets/projects/runners.gif" id="fixMargin"  width="850" alt="Runner's HIIE"></a>
+                  <a href="http://www.youtube.com/watch?v=wesn6CoC790"><img src="/assets/projects/runners.gif" id="fixMargin"  width=100% alt="Runner's HIIE"></a>
                 </div>
                 <p>2. <span class="bold"> Anonymous Dojo </span> - App using Muli-peer Connectivity to connect with fellow Dojo students. <a href="https://github.com/JonathanMEnriquez/anonymousDojo"> Source Code.</a></p>
                 <div id="imgContainer">
-                  <img src="/assets/projects/anon.gif" id="fixMargin"  width="850" alt="Anonymous Dojo">
+                  <img src="/assets/projects/anon.gif" id="fixMargin"  width=100% alt="Anonymous Dojo">
                 </div>
                 <p>3. <span class="bold"> Quasar </span> - Survive the onslaught of cute aliens. Control firing and movement by moving the phone. No buttons! <a href="https://github.com/JonathanMEnriquez/QuasarGame"> Source Code.</a></p>
                 <div id="imgContainer">
-                  <img src="/assets/projects/quasar.gif" id="fixMargin"  width="850" alt="Quasar">
+                  <img src="/assets/projects/quasar.gif" id="fixMargin"  width=100% alt="Quasar">
                 </div>
               </div>  
           </mat-tab>
         <mat-tab label="Tab 2">
           <ng-template mat-tab-label>
-              <img src="/assets/angular.png" class="icon" alt="Angular">
+              <img src="/assets/angular.png" id="icon" alt="Angular">
           </ng-template>
           <div class="tab-content">
             {{angularContent}}
@@ -35,57 +35,57 @@
               1. <a href="https://github.com/JonathanMEnriquez/personalWebsite.git"> Link</a> to the source code for this site. <br>
               2. <a href="https://github.com/JonathanMEnriquez/productsFullMean"> Angular (with a Node server and MongoDB) Assignment "PPM" source code</a> <br>
               <div id="imgContainer">
-                <img src="/assets/projects/products.png" id="fixMarginSmaller" class="z-depth-4" class="materialboxed" width="500" alt="PPA Assignment">
+                <img src="/assets/projects/products.png" id="fixMarginSmaller" class="z-depth-4" class="materialboxed" width=100% alt="PPA Assignment">
               </div>
             </div> 
           </div>
         </mat-tab>
         <mat-tab label="Tab 3">
           <ng-template mat-tab-label>
-            <img src="/assets/djangoSimple.png" class="icon" alt="Django">
+            <img src="/assets/djangoSimple.png" id="icon" alt="Django">
           </ng-template>
           <div class="tab-content">
             {{djangoContent}}
             <div class="centered">
               1. Django / SQLite Project "Coders. On Demand" Live Site. <a href="https://github.com/JonathanMEnriquez/rentcoder"> The Source Code.</a> <br>
               <div id="imgContainer">
-                <img src="/assets/projects/coders.png" class="z-depth-4" id="fixMarginSmaller" class="materialboxed" width="500" alt="Coders. On Demand.">
-                <img src="/assets/projects/models.png" class="z-depth-4" id="fixMarginSmaller" width="500" alt="Models for Coders">
+                <img src="/assets/projects/coders.png" class="z-depth-4" id="fixMarginSmaller" class="materialboxed" width=100% alt="Coders. On Demand.">
+                <img src="/assets/projects/models.png" class="z-depth-4" id="fixMarginSmaller" width=100% alt="Models for Coders">
               </div>
             </div> 
           </div>  
         </mat-tab>
         <mat-tab label="Tab 4">
           <ng-template mat-tab-label>
-              <img src="/assets/mongoLeaf.png" class="icon" alt="MongoDB">
+              <img src="/assets/mongoLeaf.png" id="icon" alt="MongoDB">
           </ng-template>
           <div class="tab-content">
             {{mongoContent}}
             <div class="centered">
               1. Book / Authors API Assignment. <a href="#"> Source Code.</a> <br>
               <div id="imgContainer">
-                <img src="/assets/projects/booksApi.png" id="fixMarginSmaller" class="z-depth-4" class="materialboxed" width="500" alt="Coders. On Demand.">
+                <img src="/assets/projects/booksApi.png" id="fixMarginSmaller" class="z-depth-4" class="materialboxed" width=100% alt="Coders. On Demand.">
               </div>
             </div> 
           </div>  
         </mat-tab>
         <mat-tab label="Tab 5">
           <ng-template mat-tab-label>
-              <img src="/assets/nodejs.png" class="icon" alt="Node">
+              <img src="/assets/nodejs.png" id="icon" alt="Node">
           </ng-template>
           <div class="tab-content">
               {{nodeContent}}
               <div class="centered">
                 1. <a href="https://github.com/JonathanMEnriquez/personalWebsite.git"> Link</a> to the source code for this site. <br>
                 <div id="imgContainer">
-                  <img src="/assets/projects/portfolioServer.png" id="fixMarginSmaller" class="z-depth-4" width="500" alt="this.server">
+                  <img src="/assets/projects/portfolioServer.png" id="fixMarginSmaller" class="z-depth-4" width=100% alt="this.server">
                 </div>
               </div> 
             </div> 
         </mat-tab>
         <mat-tab label="Tab 6">
           <ng-template mat-tab-label>
-            <img src="/assets/materialize.png" class="icon" alt="Materialize">
+            <img src="/assets/materialize.png" id="icon" alt="Materialize">
           </ng-template>
           <div class="tab-content">
               {{materializeContent}}
@@ -96,14 +96,14 @@
         </mat-tab>
         <mat-tab label="Tab 7">
             <ng-template mat-tab-label>
-              <img src="/assets/socket.png" class="icon" alt="Socket io">
+              <img src="/assets/socket.png" id="icon" alt="Socket io">
             </ng-template>
             <div class="tab-content">
                 {{socketContent}}
                 <div class="centered">
                     1. <a href="https://github.com/JonathanMEnriquez/dojoChatRoom"> Live chat room source code</a> <br>
                     <div id="imgContainer">
-                      <img src="/assets/projects/dojoChat.png" id="fixMarginSmaller" class="materialboxed" width="500" alt="Chat Assignment">
+                      <img src="/assets/projects/dojoChat.png" id="fixMarginSmaller" class="materialboxed" width=100% alt="Chat Assignment">
                     </div>
                   </div> 
               </div> 

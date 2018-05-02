@@ -41,7 +41,7 @@ mat-grid-tile {
 
 #copyright {
     color: black;
-    font-size: 0.75em;
+    font-size: 0.75vw;
 }
 
 mat-grid-tile a {
@@ -52,6 +52,7 @@ mat-grid-tile a {
 
 mat-grid-tile h6 {
     color: lightgray;
+    font-size: 1vw;
 }
 
 mat-form-field {
